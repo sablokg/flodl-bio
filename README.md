@@ -2,7 +2,7 @@
 
 Bioinformatics data layer **and model zoo** for [flodl](https://docs.rs/flodl) (Rust deep learning on libtorch).
 
-flodl-bio is a community crate built on flodl, developed and maintained by Gaurav Sablok.
+flodl-bio is a community crate built on flodl, developed by Gaurav Sablok with contributions from [@fab2s](https://github.com/fab2s), and maintained by Gaurav Sablok.
 
 ## What's in it
 

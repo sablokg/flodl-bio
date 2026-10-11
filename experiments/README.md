@@ -55,8 +55,10 @@ runs/<dataset>/       gue-tf-0 to gue-tf-4, or motif-n<N>-len<L>
 
 ## Reading the numbers
 
-- CPU runs repeat exactly for a given seed. GPU runs repeat statistically, not bit for bit:
-  some CUDA kernels are nondeterministic, which is why tables report the spread over seeds.
+- A run repeats bit for bit on the same machine and software: two complete GPU sweeps, and
+  two complete CPU sweeps, gave identical results in all 175 runs. CPU and GPU take different
+  numeric paths, so one seed gives different numbers on each, and another GPU, driver or
+  libtorch version can too. Means agree within the spread over seeds, which tables report.
 - `RSS MB` is the process's resident memory, sampled at the end of each epoch. A `cuda` build
   loads the CUDA libraries even for CPU runs (about 200 MB more), so take CPU memory figures
   from a build without `--features cuda`.

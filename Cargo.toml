@@ -6,6 +6,9 @@ rust-version = "1.75"
 description = "Bioinformatics data layer for flodl: sequence encoding, one-hot, k-mers, graphs and adjacency matrices"
 license = "MIT"
 keywords = ["bioinformatics", "deep-learning", "flodl", "graph", "one-hot"]
+homepage = "https://codeberg.org/gsablok/flodl-bio"
+repository = "https://codeberg.org/gsablok/flodl-bio"
+authors = ["Gaurav Sablok"]
 
 [features]
 default = []
